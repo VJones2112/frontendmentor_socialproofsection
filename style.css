@@ -10,6 +10,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
     /*    align-content: space-between;*/
 }
 
@@ -30,6 +32,7 @@ body {
 #top p {
     color: hsl(303, 10%, 53%);
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .starReviews {
@@ -39,11 +42,13 @@ body {
     text-align: center;
     border-radius: .5em;
     margin: 1em;
+/*    margin-bottom: 3em;*/
     padding: 1em;
+    padding-bottom: .5em;
     line-height: 1;
 }
 
-
+.stars { margin-bottom: 2em; }
 
 .testimonial {
     background: url(images/bg-pattern-bottom-mobile.svg);
@@ -58,14 +63,17 @@ body {
 
 .testimonialCard img {
     border-radius: 50%;
+    margin-right: 2em;
 }
 
 .testimonialHead {
     display: flex;
+    padding: 1em;
 }
 
 .buyerName {
     color: hsl(300, 24%, 96%);
+    font-weight: 700;
 }
 
 .buyerTitle {
@@ -74,6 +82,10 @@ body {
 
 .buyerTestimonial {
     color: hsl(300, 24%, 96%);
+    line-height: 2;
+    padding: 1em;
+    font-weight: 500;
+    margin-top: 0;
 }
 
 /*
@@ -82,23 +94,6 @@ body {
     width: 90px;
 }
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .attribution {
@@ -110,3 +105,110 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+
+@media screen and (min-width: 400px) {
+/*
+    * {
+        margin: 0;
+        padding: 0;
+    }
+*/
+    
+    body {
+        background-color: lightblue;
+        
+/*        width: 1000px;*/
+        margin: 0;
+/*        position: relative;*/
+/*        left: 0;*/
+    }
+    
+    
+    
+    #top {
+        text-align: left;
+    }
+    
+    #top h1 {
+        margin: 0;
+    }
+    
+    #topHead {
+        display: grid;
+        grid-template-columns: .8fr .8fr;
+        width: 1000px;
+/*        display: inline-flex;*/
+/*        flex-wrap: wrap;*/
+/*       width: 1000px;*/
+        border: 1px solid red;
+/*        color: green;*/
+    }
+    
+.starReviews {
+    display: inline-flex;
+    width: 75%;
+/*    padding: 1em;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+}
+  
+    .fiveStars {
+        padding: 1em;
+        margin-top: 0;
+    }
+    
+    .star2 {
+        position: relative;
+        left: 2em;
+    }
+    
+    .star3 {
+        position: relative;
+        left: 4em;
+    }
+    
+    .testimonials {
+        display: flex;
+/*        width: 30%;*/
+        
+    }
+    
+    .card2 {
+        position: relative;
+        top: 2em
+    }
+    
+    .card3 {
+        position: relative;
+        top: 4em
+    }
+    
+    .attribution {
+        position: relative;
+        top: 5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
