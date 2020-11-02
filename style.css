@@ -3,6 +3,7 @@
 html {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
+/*    margin: 0 auto;*/
 }
 
 body {
@@ -12,11 +13,14 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     background-color: hsl(0, 0%, 100%);
+    background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+background-repeat: no-repeat,no-repeat;
     /*    align-content: space-between;*/
 }
 
 #top {
-    background: url(images/bg-pattern-top-mobile.svg) no-repeat;
+/*    background: url(images/bg-pattern-top-mobile.svg) no-repeat;*/
     text-align: center;
     padding: 1em;
     padding-top: 3em;
@@ -51,7 +55,7 @@ body {
 .stars { margin-bottom: 2em; }
 
 .testimonial {
-    background: url(images/bg-pattern-bottom-mobile.svg);
+/*    background: url(images/bg-pattern-bottom-mobile.svg);*/
 }
 
 .testimonialCard {
@@ -117,15 +121,12 @@ body {
 */
     
     body {
-        background-color: lightblue;
-        
-/*        width: 1000px;*/
-        margin: 0;
-/*        position: relative;*/
-/*        left: 0;*/
+/*        background-color: lightblue;*/
+/*        border: 1px solid green;*/
+        min-width: 1000px;
+        margin: 0 auto;
     }
-    
-    
+
     
     #top {
         text-align: left;
@@ -136,23 +137,24 @@ body {
     }
     
     #topHead {
+        margin-top: 2em;
         display: grid;
-        grid-template-columns: .8fr .8fr;
+        grid-template-columns: .7fr .8fr;
         width: 1000px;
-/*        display: inline-flex;*/
-/*        flex-wrap: wrap;*/
-/*       width: 1000px;*/
-        border: 1px solid red;
-/*        color: green;*/
+/*        background: url(images/bg-pattern-top-desktop.svg);*/
+/*        border: 1px solid red;*/
     }
     
-.starReviews {
-    display: inline-flex;
-    width: 75%;
-/*    padding: 1em;*/
-/*    justify-content: center;*/
-/*    align-content: center;*/
-}
+    .stars {
+        margin-top: 2.5em;
+        margin-bottom: 1em;
+    }
+    
+    .starReviews {
+        display: inline-flex;
+        width: 75%;
+        margin-bottom: 0;
+    }
   
     .fiveStars {
         padding: 1em;
@@ -171,8 +173,13 @@ body {
     
     .testimonials {
         display: flex;
+        line-height: 0.5;
 /*        width: 30%;*/
         
+    }
+    
+    .buyerTestimonial {
+        line-height: 1.5;
     }
     
     .card2 {
