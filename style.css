@@ -3,34 +3,19 @@
 html {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-/*    margin: 0 auto;*/
-}
-
-body {
-    max-width: 375px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background-color: hsl(0, 0%, 100%);
-    background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
-    background-position: top, bottom;
-background-repeat: no-repeat,no-repeat;
-    /*    align-content: space-between;*/
 }
 
 #top {
-/*    background: url(images/bg-pattern-top-mobile.svg) no-repeat;*/
     text-align: center;
     padding: 1em;
     padding-top: 3em;
-    /*    margin: 1em;*/
 }
 
 #top h1 {
     color: hsl(300, 43%, 22%);
     width: 80%;
     margin: 0 auto;
+    font-size: 2.5em;
 }
 
 #top p {
@@ -46,16 +31,17 @@ background-repeat: no-repeat,no-repeat;
     text-align: center;
     border-radius: .5em;
     margin: 1em;
-/*    margin-bottom: 3em;*/
-    padding: 1em;
-    padding-bottom: .5em;
+    padding: 0.25em;
+    /*    padding-bottom: .5em;*/
     line-height: 1;
 }
 
-.stars { margin-bottom: 2em; }
+.stars {
+    margin-bottom: 2em;
+}
 
 .testimonial {
-/*    background: url(images/bg-pattern-bottom-mobile.svg);*/
+    /*    background: url(images/bg-pattern-bottom-desktop.svg);*/
 }
 
 .testimonialCard {
@@ -92,14 +78,6 @@ background-repeat: no-repeat,no-repeat;
     margin-top: 0;
 }
 
-/*
-.repeat {
-    background: url(images/icon-star.svg) repeat-x;
-    width: 90px;
-}
-*/
-
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -111,87 +89,89 @@ background-repeat: no-repeat,no-repeat;
 }
 
 
-
-@media screen and (min-width: 400px) {
-/*
+/*Desktop Styling*/
+@media screen and (min-width: 500px) {
+    /*
     * {
         margin: 0;
         padding: 0;
     }
 */
-    
+
     body {
-/*        background-color: lightblue;*/
-/*        border: 1px solid green;*/
-        min-width: 1000px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        background: url(images/bg-pattern-top-desktop.svg) no-repeat;
+        width: 1000px;
+        max-width: 1440px;
+        padding: 2rem;
     }
 
-    
     #top {
         text-align: left;
     }
-    
+
     #top h1 {
         margin: 0;
     }
-    
+
     #topHead {
         margin-top: 2em;
         display: grid;
         grid-template-columns: .7fr .8fr;
         width: 1000px;
-/*        background: url(images/bg-pattern-top-desktop.svg);*/
-/*        border: 1px solid red;*/
     }
-    
+
     .stars {
         margin-top: 2.5em;
         margin-bottom: 1em;
     }
-    
+
     .starReviews {
         display: inline-flex;
         width: 75%;
         margin-bottom: 0;
     }
-  
+
     .fiveStars {
         padding: 1em;
         margin-top: 0;
     }
-    
+
     .star2 {
         position: relative;
         left: 2em;
     }
-    
+
     .star3 {
         position: relative;
         left: 4em;
     }
-    
+
     .testimonials {
         display: flex;
         line-height: 0.5;
-/*        width: 30%;*/
-        
+        background: url(images/bg-pattern-bottom-desktop.svg);
+        /*        width: 30%;*/
+
     }
-    
+
     .buyerTestimonial {
         line-height: 1.5;
     }
-    
+
     .card2 {
         position: relative;
         top: 2em
     }
-    
+
     .card3 {
         position: relative;
         top: 4em
     }
-    
+
     .attribution {
         position: relative;
         top: 5em;
@@ -199,23 +179,23 @@ background-repeat: no-repeat,no-repeat;
 }
 
 
+/*Mobile Styling*/
+
+
+@media screen and (max-width: 500px) {
+
+    body {
+        max-width: 375px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: hsl(0, 0%, 100%);
+        background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
